@@ -14,6 +14,7 @@
 		5F99E4C01C5A1E7E004284AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F99E4BE1C5A1E7E004284AF /* LaunchScreen.storyboard */; };
 		5F99E4CB1C5A1E7E004284AF /* TomodachiAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99E4CA1C5A1E7E004284AF /* TomodachiAPITests.swift */; };
 		5F99E4D61C5A1E7E004284AF /* TomodachiAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99E4D51C5A1E7E004284AF /* TomodachiAPIUITests.swift */; };
+		9E6F170AA1578EEA40942E1A /* Pods_TomodachiAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D739FF620C3825CABE7BD5AA /* Pods_TomodachiAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		5F99E4D11C5A1E7E004284AF /* TomodachiAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomodachiAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F99E4D51C5A1E7E004284AF /* TomodachiAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomodachiAPIUITests.swift; sourceTree = "<group>"; };
 		5F99E4D71C5A1E7E004284AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FDA34B5DFA9F7FFCBF54271 /* Pods-TomodachiAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomodachiAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TomodachiAPI/Pods-TomodachiAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		9C542293B778D5D136CEAB68 /* Pods-TomodachiAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomodachiAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-TomodachiAPI/Pods-TomodachiAPI.release.xcconfig"; sourceTree = "<group>"; };
+		D739FF620C3825CABE7BD5AA /* Pods_TomodachiAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomodachiAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6F170AA1578EEA40942E1A /* Pods_TomodachiAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				5F99E4C91C5A1E7E004284AF /* TomodachiAPITests */,
 				5F99E4D41C5A1E7E004284AF /* TomodachiAPIUITests */,
 				5F99E4B31C5A1E7E004284AF /* Products */,
+				F3D3855F3CD05ECE035D3AFF /* Pods */,
+				BAE09E63D8CB85D0A315681A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = TomodachiAPIUITests;
 			sourceTree = "<group>";
 		};
+		BAE09E63D8CB85D0A315681A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D739FF620C3825CABE7BD5AA /* Pods_TomodachiAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3D3855F3CD05ECE035D3AFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA34B5DFA9F7FFCBF54271 /* Pods-TomodachiAPI.debug.xcconfig */,
+				9C542293B778D5D136CEAB68 /* Pods-TomodachiAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F99E4DA1C5A1E7E004284AF /* Build configuration list for PBXNativeTarget "TomodachiAPI" */;
 			buildPhases = (
+				716192DDA63C8C07A055B3B6 /* Check Pods Manifest.lock */,
 				5F99E4AE1C5A1E7E004284AF /* Sources */,
 				5F99E4AF1C5A1E7E004284AF /* Frameworks */,
 				5F99E4B01C5A1E7E004284AF /* Resources */,
+				CFF93F6656EE9A7E64B30194 /* Embed Pods Frameworks */,
+				150A02B6C1765DCA26ACDDD7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		150A02B6C1765DCA26ACDDD7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomodachiAPI/Pods-TomodachiAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		716192DDA63C8C07A055B3B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF93F6656EE9A7E64B30194 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomodachiAPI/Pods-TomodachiAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F99E4AE1C5A1E7E004284AF /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		5F99E4DB1C5A1E7E004284AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FDA34B5DFA9F7FFCBF54271 /* Pods-TomodachiAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TomodachiAPI/Info.plist;
@@ -408,6 +484,7 @@
 		};
 		5F99E4DC1C5A1E7E004284AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C542293B778D5D136CEAB68 /* Pods-TomodachiAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TomodachiAPI/Info.plist;
@@ -484,6 +561,7 @@
 				5F99E4DC1C5A1E7E004284AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F99E4DD1C5A1E7E004284AF /* Build configuration list for PBXNativeTarget "TomodachiAPITests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				5F99E4DF1C5A1E7E004284AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F99E4E01C5A1E7E004284AF /* Build configuration list for PBXNativeTarget "TomodachiAPIUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				5F99E4E21C5A1E7E004284AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
